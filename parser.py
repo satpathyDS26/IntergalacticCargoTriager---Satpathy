@@ -32,8 +32,8 @@ def parse_line(line):
         weight = float(weight_part.strip())
         destination = dest_part.strip()
 
-        # Apply Rule 1 (Sector-7)
-        if  destination == "Sector-7":
+        # Apply Rule 1 for exact substring(Sector-7)
+        if  "Sector-7" in destination:
             weight *= 1.45
 
         # Apply Rule 2 (round AFTER multiplication)
